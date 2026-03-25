@@ -56,6 +56,8 @@ UIGen is an AI-powered React component generator. Users describe components in a
 
 ### Data model (Prisma / SQLite)
 
+The database schema is defined in `prisma/schema.prisma` — reference it whenever you need to understand the structure of data stored in the database.
+
 - **User** — email + bcrypt password
 - **Project** — belongs to an optional User; stores `messages` (JSON array) and `data` (serialized `VirtualFileSystem` nodes) as JSON strings in SQLite text columns
 
